@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="title">
+        Password <br />
+        Generator
+      </div>
+      <div class="main__inner">
+        <div class="action">
+          <div class="password">
+            <input id="input__group" class="input__group" type="text" />
+            <div class="pass__strong">
+              <svg
+                width="20"
+                height="3"
+                viewBox="0 0 20 3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect id="extreme" width="20" height="3" fill="#00F0FF" />
+              </svg>
+              <svg
+                width="20"
+                height="3"
+                viewBox="0 0 20 3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect id="hard" width="20" height="3" fill="#00F0FF" />
+              </svg>
+              <svg
+                width="20"
+                height="3"
+                viewBox="0 0 20 3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect id="normal" width="20" height="3" fill="#00F0FF" />
+              </svg>
+              <svg
+                width="20"
+                height="3"
+                viewBox="0 0 20 3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect id="easy" width="20" height="3" fill="#00F0FF" />
+              </svg>
+            </div>
+            <div id="restart" class="pass__restart">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.3748 13.387V11.9902C20.3748 7.36219 16.6135 3.60938 11.9748 3.60938C10.7129 3.60783 9.46684 3.89093 8.32949 4.43761C7.19214 4.98429 6.19274 5.78047 5.4057 6.76688M3.59961 10.6106V12.0075C3.59961 16.6406 7.35898 20.3906 11.9996 20.3906C13.2579 20.3888 14.5 20.1063 15.6353 19.5636C16.7705 19.0209 17.7704 18.2318 18.5621 17.2538" stroke="#00F0FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+                  <path d="M1.5 12L3.5625 9.9375L5.71875 12M22.5 12L20.4375 14.0625L18.2812 12" stroke="#00F0FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+                  </svg>
+                  
+            </div>
+          </div>
+          <button id="copy__button" class="button">
+              <span>Copy Password_</span>
+              <div>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.5625 2.25L16.3125 9L9.5625 15.75M15.375 9H1.6875" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+                      </svg>             
+              </div>
+              <div class="button__accessor">R25</div>
+              <div class="button__accessor-corner"></div>
+          </button>
+          <div class="count">
+              <input id="input" type="range" min="0" max="50" value="0">    
+          </div>
+          <div class="selectors">
+              <div class="check">
+                  <input id="up" type="checkbox" ></input>
+                  <div class="check__title">Uppercase letters</div>
+              </div>
+              <div class="check">
+                  <input id="low" type="checkbox" ></input>
+                  <div class="check__title">Lowercase letters</div>
+              </div>
+              <div class="check">
+                  <input id="num" type="checkbox" ></input>
+                  <div class="check__title">Numbers</div>
+              </div>
+              <div class="check">
+                  <input id="symbol" type="checkbox" ></input>
+                  <div class="check__title">Symbols</div>
+              </div>
+          </div>
+        </div>
+        <div class="history">
+          <div class="history__title">Password history</div>
+          <div class="copy__box">
+             <!-- <div class="copy">
+              <div class="copy__code">
+                <div class="code">^d3>~9YDA8s}cWN9L_P^</div>
+                <div class="code__history">21.12.2022 20:00</div>
+              </div>
+              <div class="copy__button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.375 22.5H6.375C6.07663 22.5 5.79048 22.3815 5.5795 22.1705C5.36853 21.9595 5.25 21.6734 5.25 21.375V6C5.25 5.80109 5.32902 5.61032 5.46967 5.46967C5.61032 5.32902 5.80109 5.25 6 5.25H21.375C21.6734 5.25 21.9595 5.36853 22.1705 5.5795C22.3815 5.79048 22.5 6.07663 22.5 6.375V21.375C22.5 21.6734 22.3815 21.9595 22.1705 22.1705C21.9595 22.3815 21.6734 22.5 21.375 22.5Z" fill="#FAFAFA"/>
+                  <path d="M5.25 3.75H18.75V2.625C18.75 2.32663 18.6315 2.04048 18.4205 1.8295C18.2095 1.61853 17.9234 1.5 17.625 1.5H2.8125C2.4644 1.5 2.13056 1.63828 1.88442 1.88442C1.63828 2.13056 1.5 2.4644 1.5 2.8125V17.625C1.5 17.9234 1.61853 18.2095 1.8295 18.4205C2.04048 18.6315 2.32663 18.75 2.625 18.75H3.75V5.25C3.75 4.85218 3.90804 4.47064 4.18934 4.18934C4.47064 3.90804 4.85218 3.75 5.25 3.75Z" fill="#FAFAFA"/>
+                  </svg>
+              </div>
+            </div> -->
+          </div>
+          <div class="history__clear">Clear history</div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

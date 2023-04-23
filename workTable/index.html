@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="info"></div>
+    <div class="new__member">
+        <div class="new__member__head">New Member</div>
+        <div class="new__member__body">
+            <input class="member__input" type="text" placeholder="Name" >
+            <label class="custom-file-upload">
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 6L10 1L5 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 1V13" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                <input type="file"/>
+                Upload Photo
+            </label>
+        </div>
+        <div class="new__member__buttons">
+            <div class="button button--secondary">Cancel</div>
+            <div class="button">Save</div>
+        </div>
+    </div>
+    <div class="new__item">
+        <div class="new__item__head">
+            New Item
+        </div>
+        <div class="new__item__body">
+            <input class="item__input" type="text" placeholder="Name" >
+            <input class="item__input input__big" type="text" placeholder="Description">
+            <input class="item__input" type="date">
+            <select>
+                <option disabled selected value>Assign</option>
+                <option>To do</option>
+                <option>In Progress</option>
+                <option>In Review</option>
+                <option>Done</option>
+            </select>
+        </div>
+        <div class="new__item__buttons">
+            <div class="button button--secondary">Cancel</div>
+            <div class="button">Save</div>
+        </div>
+    </div>
+    <header>
+        <div class="header__nav">
+            <div class="header__nav__inner">
+                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0.5H1.99C0.88 0.5 0.00999999 1.39 0.00999999 2.5L0 16.5C0 17.6 0.88 18.5 1.99 18.5H16C17.1 18.5 18 17.6 18 16.5V2.5C18 1.39 17.1 0.5 16 0.5ZM16 12.5H12C12 14.16 10.65 15.5 9 15.5C7.35 15.5 6 14.16 6 12.5H1.99V2.5H16V12.5Z" fill="white"/>
+                    </svg>
+                    <span>Backlog</span>
+            </div>
+            <div class="header__nav__inner">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.333984 10.5H8.33398V0.5H0.333984V10.5ZM0.333984 18.5H8.33398V12.5H0.333984V18.5ZM10.334 18.5H18.334V8.5H10.334V18.5ZM10.334 0.5V6.5H18.334V0.5H10.334Z" fill="white"/>
+                    </svg>
+                    <span>Board</span>
+            </div>
+            <div class="header__nav__inner">
+                <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.666 8.5H19.666V10H12.666V8.5ZM12.666 6H19.666V7.5H12.666V6ZM12.666 11H19.666V12.5H12.666V11ZM20.666 0.5H2.66602C1.56602 0.5 0.666016 1.4 0.666016 2.5V15.5C0.666016 16.6 1.56602 17.5 2.66602 17.5H20.666C21.766 17.5 22.666 16.6 22.666 15.5V2.5C22.666 1.4 21.766 0.5 20.666 0.5ZM20.666 15.5H11.666V2.5H20.666V15.5Z" fill="white"/>
+                    </svg>
+                    <span>Feed</span>                    
+            </div>
+            <div class="header__nav__inner">
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H14C15.1 20 16 19.1 16 18V2C16 0.9 15.1 0 14 0ZM2 2H7V10L4.5 8.5L2 10V2Z" fill="white"/>
+                    </svg>
+                    <span>Reports</span>
+            </div>
+        </div>
+        <div class="header__acc">
+            <div class="header__acc__title">
+                <span>Product Design Team</span>
+                <div class="user">Sprint 9</div>
+            </div>
+            <div class="header__acc__member">
+                <div class="avatar__group">
+                    <div class="avatar">
+                        <img src="images/Avatar.png">
+                    </div>
+                    <div class="avatar">
+                        <img src="images/Avatar.png">
+                    </div>
+                    <div class="avatar">
+                        <img src="images/Avatar.png">
+                    </div>
+                    <div class="avatar">
+                        <img src="images/Avatar.png">
+                    </div>
+                </div>
+                <div class="line"></div>
+                <span class="add__member">+ New Member</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="items">
+                    <div class="input">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#C4C4C4"/>
+                            </svg>                            
+                        <input placeholder="Search Items" type="text">
+                    </div>         
+                <div class="button">New Item</div>
+            </div>
+            <div class="card__group">
+                <div class="cards">
+                    <div class="cards__head">
+                        <span>To do</span>
+                        <div id="cards__count">3</div>
+                    </div>
+                    <div class="card" draggable="true">
+                        <div class="card__body">
+                            <span>Mobile Wireframes</span>
+                            <div class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque …</div>
+                            <div class="user">Maecenas Lacus</div>
+                            <div class="card__line"></div>
+                            <div class="card__time">
+                                <div class="time">
+                                    <img src="images/Vector.png" alt="">
+                                    <span>Apr 12</span>
+                                </div>
+                                <div class="avatar">
+                                    <img src="images/Avatar.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards__head">
+                        <span>In Progress</span>
+                        <div id="cards__count">3</div>
+                    </div>
+                    <div class="card" draggable="true">
+                        <div class="card__body">
+                            <span>Mobile Wireframes</span>
+                            <div class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque …</div>
+                            <div class="user">Maecenas Lacus</div>
+                            <div class="card__line"></div>
+                            <div class="card__time">
+                                <div class="time">
+                                    <img src="images/Vector.png" alt="">
+                                    <span>Apr 12</span>
+                                </div>
+                                <div class="avatar">
+                                    <img src="images/Avatar.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards__head">
+                        <span>In Review</span>
+                        <div id="cards__count">3</div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards__head">
+                        <span>Done</span>
+                        <div id="cards__count">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="container">
+        <form class="calc">
+            <input class="calc__head" id="answer" readonly value="0">
+            <div class="calc__body">
+                <input type="button" onclick="form.answer.value = ''" value="AC" id="allClear" class="nums">
+                <input type="button" onclick="form.answer.value -= ''" value="C" id="clear" class="nums">
+                <input type="button" onclick="form.answer.value += '%'" value="%" id="percent" class="nums">
+                <input type="button" onclick="form.answer.value += '/'" value="/" id="division" class="nums">
+                <input type="button" onclick="form.answer.value += '7'" value="7" id="seven" class="nums">
+                <input type="button" onclick="form.answer.value += '8'" value="8" id="eight" class="nums">
+                <input type="button" onclick="form.answer.value += '9'" value="9" id="nine" class="nums">
+                <input type="button" onclick="form.answer.value += '*'" value="X" id="multi" class="nums">
+                <input type="button" onclick="form.answer.value += '4'" value="4" id="four" class="nums">
+                <input type="button" onclick="form.answer.value += '5'" value="5" id="five" class="nums">
+                <input type="button" onclick="form.answer.value += '6'" value="6" id="six" class="nums">
+                <input type="button" onclick="form.answer.value += '-'" value="-" id="subs" class="nums">
+                <input type="button" onclick="form.answer.value += '1'" value="1" id="one" class="nums">
+                <input type="button" onclick="form.answer.value += '2'" value="2" id="two" class="nums">
+                <input type="button" onclick="form.answer.value += '3'" value="3" id="three" class="nums">
+                <input type="button" onclick="form.answer.value += '+'" value="+" id="plus" class="nums">
+                <input type="button" onclick="form.answer.value += '00'" value="00" id="doubleZero" class="nums">
+                <input type="button" onclick="form.answer.value += '0'" value="0" id="zero" class="nums">
+                <input type="button" onclick="form.answer.value += '.'" value="." id="dot" class="nums">
+                <input type="button" onclick="form.answer.value = eval(form.answer.value) " value="=" id="equal" class="nums">
+            </div>
+        </form>
+    </div> -->
+    <div class="container">
+        <form class="calc">
+            <input class="calc__head" id="answer" value="0" readonly>
+            <div class="calc__body">
+                <input type="button" value="AC" id="allClear" class="nums">
+                <input type="button" value="C" id="clear" class="nums">
+                <input type="button" value="%" id="percent" class="nums">
+                <input type="button" value="/" id="division" class="nums">
+                <input type="button" value="7" id="seven" class="nums">
+                <input type="button" value="8" id="eight" class="nums">
+                <input type="button" value="9" id="nine" class="nums">
+                <input type="button" value="*" id="multi" class="nums">
+                <input type="button" value="4" id="four" class="nums">
+                <input type="button" value="5" id="five" class="nums">
+                <input type="button" value="6" id="six" class="nums">
+                <input type="button" value="-" id="subs" class="nums">
+                <input type="button" value="1" id="one" class="nums">
+                <input type="button" value="2" id="two" class="nums">
+                <input type="button" value="3" id="three" class="nums">
+                <input type="button" value="+" id="plus" class="nums">
+                <input type="button" value="00" id="doubleZero" class="nums">
+                <input type="button" value="0" id="zero" class="nums">
+                <input type="button" value="." id="dot" class="nums">
+                <input type="button" value="=" onclick="calculate()" id="equal" class="nums">
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

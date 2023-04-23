@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#121212" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="header__inner container">
+        <div class="header__accessory">
+          <button class="icon-button icon-button--light">
+            <span class="material-symbols-outlined"> arrow_back </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Wrapper -->
+    <main class="wrapper">
+      <!-- Val Board -->
+      <div class="val-board">
+        <!-- Val Board Cover -->
+        <div class="val-board__cover animation--spin">
+          <img
+            id="image"
+            src=""
+            alt=""
+            class="val-board__cover-image"
+            draggable="false"
+          />
+        </div>
+        <!-- Val Board Music -->
+        <audio id="val-board__music">
+          <source src=""></source>
+        </audio>
+        <!-- Val Board Content -->
+        <div class="val-board__content">
+          <div class="val-board__title">Paint it Black</div>
+          <div class="val-board__author">The Rolling Stones</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Player -->
+    <div class="player">
+      <div class="container">
+        <!-- Player Actions -->
+        <div class="player__actions">
+          <!-- Left Actions -->
+          <div class="player__actions-stack">
+            <button class="icon-button">
+              <span class="material-symbols-outlined"> subject </span>
+            </button>
+          </div>
+          <!-- General Actions -->
+          <div class="player__actions-stack player__actions-stack--center">
+            <button id="prev" class="icon-button">
+              <span class="material-symbols-outlined">
+                keyboard_double_arrow_left
+              </span>
+            </button>
+            <button id="play" class="icon-button icon-button--default icon-button--lg">
+              <span class="material-symbols-outlined"> play_arrow </span>
+            </button>
+            <button id="pause" style="display: none;" class="icon-button icon-button--default icon-button--lg">
+              <span class="material-symbols-outlined"> pause </span>
+            </button>
+            <button id="next" class="icon-button">
+              <span class="material-symbols-outlined">
+                keyboard_double_arrow_right
+              </span>
+            </button>
+          </div>
+          <!-- Right Actions -->
+          <div class="player__actions-stack player__actions-stack--right">
+            <button id="volume" class="icon-button">
+              <span class="material-symbols-outlined"> volume_up </span>
+            </button>
+            <button id="replay" class="icon-button">
+              <span class="material-symbols-outlined"> replay </span>
+            </button>
+          </div>
+        </div>
+        <!-- Player Range -->
+        <div class="player__range">
+          <span id="start" class="player__range__text">0</span>
+          <input id="range" type="range" class="range" value="0" />
+          <span id="end" class="player__range__text">0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Colors -->
+    <div class="color-fade"></div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
